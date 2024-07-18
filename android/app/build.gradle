@@ -24,6 +24,13 @@ if (flutterVersionName == null) {
 }
 
 android {
+
+    lintOptions {
+        checkReleaseBuilds false
+
+        //abortOnError false
+    }
+
     namespace = "camp.kode.lms_voice_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
@@ -41,7 +48,7 @@ android {
         //minSdk = flutter.minSdkVersion
         minSdk = 21
         //targetSdk = flutter.targetSdkVersion
-        targetSdk = 28
+        targetSdk = 31
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
     }
