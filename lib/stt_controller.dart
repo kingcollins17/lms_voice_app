@@ -19,11 +19,13 @@ class SpeechToTextController extends GetxController {
   }
 
   Future<void> startListening() async {
+  	if(_speechEnabled){
     isListening.value = true;
     await _speechToText.listen(onResult: (result) {
       words.value = {result.recognizedWords, ...words};
       isListening.value = false;
     });
+}
   }
 
   Future<void> stopListening() async {
