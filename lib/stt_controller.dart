@@ -7,10 +7,9 @@ class SpeechToTextController extends GetxController {
   final _speechToText = SpeechToText();
   bool _speechEnabled = false;
 
-  //bool get isListening => _speechToText.isListening; //whether this is currently listening
   final isListening = false.obs;
 
-  final words = <String>{}.obs; //the words recorded
+  final words = <String>{}.obs;
 
   final searchResults = <String>[].obs;
 
