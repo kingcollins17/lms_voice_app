@@ -32,10 +32,10 @@ class WordListScreen extends GetWidget<SpeechToTextController> {
                   ),
                   child: TextField(
                     onChanged: (value) => controller.search(value),
-                    //style: TextStyle(height: 1),
+                    
                     decoration: const InputDecoration(
                         border: InputBorder.none,
-                        //contentPadding: EdgeInsets.symmetric(horizontal: 10),
+                        
                         isDense: true,
                         hintText: 'Search word history.',
 
